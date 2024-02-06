@@ -1,0 +1,138 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(204, 86%, 23%);
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    background: url("./david-moum-nbqlWhOVu6k-unsplash.jpg"); 
+    background-size: cover;  
+    background-repeat: no-repeat; 
+    
+} 
+
+
+h1{
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+
+.weatherApp{
+    /* background-color: white; */
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 15px;
+    /* background: url("./tom-barrett-hgGplX3PFBg-unsplash.jpg"); */
+    /* background: url("./david-moum-nbqlWhOVu6k-unsplash.jpg"); */
+
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type = "text"] {
+    flex: 1;
+    padding: 20px;
+    border: 2px solid #3498db;
+    border-radius: 15px;
+    font-size: 1rem;
+
+}
+
+.search{
+    background-color: #3498db;
+    border: none;
+    border-radius: 15px;
+    padding: 15px;
+    cursor: pointer;
+    color: white;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+.search:hover{
+    background-color: #2988b9;
+}
+
+.city-date{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.city-date.city{
+    font-size: 2rem;
+    opacity: 0.9;
+}
+.city-date .date{
+    background-color: #c3eaf4;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
+.temprature{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* to chnage the line */
+    flex-direction: column;  
+}
+
+.temp{
+    font-size: 10rem;
+}
+
+.discripsn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.discripsn i{
+    font-size: 1.5rem;
+    opacity: 0.8;
+}
+
+.discripsn span{
+    font-size: 1.5rem;
+}
+
+.other-info{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+}
+
+.wind-info, .humidity-info, .visibility-info{
+    background-color: #ecf8f1;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 15px;
+    padding: 30px 20px;
+    box-shadow: rgba(0, 0, 0, 24) 0px 3px 8px;
+}
+
+.other-info .material-icons{
+    font-size: 3rem;
+    opacity: 0.8;
+}
+
+.wind-info div, .humidity-info div, .visibility-info div{
+    text-align: center;
+}
